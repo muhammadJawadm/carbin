@@ -17,14 +17,33 @@ const Hero = ({ result, setResult }) => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-20">
         <div className="text-center max-w-3xl mx-auto">
           <span className="text-blue-400 font-bold tracking-wider uppercase text-sm mb-4 block">
-            Trusted by Dealerships Nationwide
+            Welcome to VINCheckStudio
           </span>
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight leading-tight">
-            Check Any Car <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Instantly with VIN</span>
+            Get accurate, fast, and affordable <br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">vehicle history reports</span>
           </h1>
           <p className="text-xl text-gray-300 mb-10 font-light leading-relaxed">
-            Get instant access to vehicle history, registration status, mileage records, and expert inspection reports before you buy.
+            At VINCheckStudio, we provide detailed vehicle data including accident history, title records, mileage verification, and ownership details to help you make informed decisions before buying or selling a vehicle.
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-white mb-10">
+            <div className="flex items-center gap-2">
+              <span className="text-blue-400">✔</span> Instant VIN Reports
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-blue-400">✔</span> Reliable Data Sources
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-blue-400">✔</span> Affordable Pricing
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-blue-400">✔</span> 24/7 Customer Support
+            </div>
+          </div>
+          
+          <p className="text-lg text-gray-400 mb-8 font-light">
+            Enter your VIN today and receive your report quickly and securely.
           </p>
 
           {!result ? (

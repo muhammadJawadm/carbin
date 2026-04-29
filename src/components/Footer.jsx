@@ -1,4 +1,5 @@
 import { Car, Mail, Phone, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
                 <Car className="text-white w-5 h-5" />
               </div>
               <span className="font-bold text-xl tracking-tight text-white">
-                VIN<span className="text-blue-500">Inspect</span>
+                VIN<span className="text-blue-500">CheckStudio</span>
               </span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -30,11 +31,9 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-bold mb-6">Quick Links</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Home</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-blue-400 transition-colors">Our Services</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Dealer Program</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Pricing</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-blue-400 transition-colors">About Us</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-blue-400 transition-colors">Home</Link></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-blue-400 transition-colors">About Us</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-blue-400 transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -63,14 +62,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3 text-gray-400">
                 <Mail className="w-5 h-5 text-blue-500 shrink-0" />
-                <span>support@vininspect.com</span>
+                <span>info@vincheckstudio.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} VINInspect. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} VINCheckStudio. All rights reserved.</p>
           <p>Designed with Tailwind CSS & React</p>
         </div>
       </div>

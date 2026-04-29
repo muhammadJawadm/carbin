@@ -1,27 +1,27 @@
-import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import InspectionCTA from './components/InspectionCTA';
-import WhyChooseUs from './components/WhyChooseUs';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
-  const [vinResult, setVinResult] = useState(null);
-
   return (
-    <div className="min-h-screen font-sans selection:bg-blue-200">
-      <Navbar />
-      
-      <main>
-        <Hero result={vinResult} setResult={setVinResult} />
-        <Services />
-        <InspectionCTA />
-        <WhyChooseUs />
-      </main>
+    <Router>
+      <div className="min-h-screen font-sans selection:bg-blue-200 flex flex-col">
+        <Navbar />
+        
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

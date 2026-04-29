@@ -3,24 +3,24 @@ import { Zap, Database, CheckCircle, Lock } from 'lucide-react';
 const WhyChooseUs = () => {
   const reasons = [
     {
-      title: 'Fast Reports',
-      description: 'Get instant access to reports immediately after entering the VIN. No waiting.',
+      title: 'Fast Delivery',
+      description: 'Fast delivery within minutes immediately after entering the VIN. No waiting.',
       icon: <Zap className="w-6 h-6 text-blue-600" />
     },
     {
-      title: 'Reliable Data',
-      description: 'We source our data directly from NMVTIS and trusted national databases.',
+      title: 'Trusted Data Insights',
+      description: 'Trusted data insights from verified national databases.',
       icon: <Database className="w-6 h-6 text-blue-600" />
     },
     {
-      title: 'Dealer Trusted',
-      description: 'Used by thousands of dealerships nationwide to appraise trade-ins securely.',
-      icon: <CheckCircle className="w-6 h-6 text-blue-600" />
+      title: 'Secure Process',
+      description: 'Easy and secure process to ensure confidentiality.',
+      icon: <Lock className="w-6 h-6 text-blue-600" />
     },
     {
-      title: 'Secure Process',
-      description: 'Your searches are confidential and payments are 256-bit encrypted.',
-      icon: <Lock className="w-6 h-6 text-blue-600" />
+      title: 'Dedicated Support',
+      description: 'Dedicated support team ready to assist you 24/7.',
+      icon: <CheckCircle className="w-6 h-6 text-blue-600" />
     }
   ];
 
@@ -28,9 +28,9 @@ const WhyChooseUs = () => {
     <section id="about" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">Why Choose VINInspect?</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">Why Choose Us?</h2>
           <p className="text-lg text-gray-600">
-            We provide the most accurate and up-to-date vehicle data to ensure you never make a blind purchase.
+            We are committed to delivering trusted vehicle history information using verified data sources. Our goal is to provide transparency and help our customers avoid costly mistakes.
           </p>
         </div>
 
