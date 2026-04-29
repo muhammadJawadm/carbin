@@ -22,9 +22,9 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <button className="hidden md:block text-gray-900 font-medium hover:text-blue-600 transition-colors">
+            <Link to="/contact" className="hidden md:block text-gray-900 font-medium hover:text-blue-600 transition-colors">
               Dealer Login
-            </button>
+            </Link>
             <Link to="/" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-medium transition-all duration-300 shadow-lg shadow-blue-600/30">
               Get Started
             </Link>

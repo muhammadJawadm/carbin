@@ -1,4 +1,5 @@
 import { ShieldCheck, Activity, Calendar, CarFront, FileText, AlertTriangle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ResultsCard = ({ data, onReset }) => {
   if (!data) return null;
@@ -79,9 +80,9 @@ const ResultsCard = ({ data, onReset }) => {
                 <p className="text-xs text-gray-500">Get a full 150-point inspection report.</p>
               </div>
             </div>
-            <button className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors">
+            <Link to="/contact" className="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors">
               Request Report
-            </button>
+            </Link>
           </div>
         </div>
       </div>

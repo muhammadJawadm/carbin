@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const InspectionCTA = () => {
   return (
     <section className="relative py-24 overflow-hidden">
@@ -22,9 +24,9 @@ const InspectionCTA = () => {
             </p>
           </div>
           <div className="md:w-1/3 flex justify-center md:justify-end w-full">
-            <button className="bg-white text-blue-600 hover:bg-gray-50 px-8 py-4 rounded-xl font-bold text-lg shadow-2xl transition-all duration-300 w-full md:w-auto hover:-translate-y-1">
+            <Link to="/contact" className="inline-block text-center bg-white text-blue-600 hover:bg-gray-50 px-8 py-4 rounded-xl font-bold text-lg shadow-2xl transition-all duration-300 w-full md:w-auto hover:-translate-y-1">
               Request Inspection
-            </button>
+            </Link>
           </div>
         </div>
       </div>
